@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: var(--font);
+    font-size: 16px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+:root{
+    --gradient: linear-gradient(to top, #2586F8, #21A5D9, #30EDF0, #21D9A8, #25F885);
+    --font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+
+    background-image: var(--gradient);
+}
+
+main{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+main form{
+    width: inherit;
+    margin: inherit;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(153, 149, 149, 0.5);
+}
+
+h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+label{
+    color: rgb(70, 68, 68);
+    font-size: .8rem;
+}
+
+input{
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+select{
+    width: 100%;
+    padding: 8px;
+}
+
+.form-cont{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cont-end{
+    max-width: 50%;
+    width: 50%;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.cont-end span{
+    font-size: .8rem;
+    color: blue;
+}
+
+.sele-new{
+    max-width: 50%;
+    width: 45%;
+    height: 81%;
+
+    display: block;
+}
+
+div select{
+}
+
+div p{
+    font-weight: bold;
+    margin-bottom: 7px;
+    margin-top: 20px;
+}
+
+.sele-new span{
+    margin-top: 10px;
+    margin-left: 5px;
+    color: gray;
+}
+
+#submit{
+    width: 40%;
+    margin: 0 auto;
+    background-color: #2586F8;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: #25F885;
+    transition: .1s;
+
+}
