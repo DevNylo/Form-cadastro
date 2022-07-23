@@ -12,6 +12,9 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+input[type=number]{
+    -moz-appearance: textfield;
+}
 
 :root{
     --gradient: linear-gradient(to top, #2586F8, #21A5D9, #30EDF0, #21D9A8, #25F885);
